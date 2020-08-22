@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "outDir": "lib",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2020",
+    "moduleResolution": "node"
+  },
+  "compileOnSave": true,
+  "include": [
+    "src"
+  ],
+  "watchOptions": {
+    "watchFile": "useFsEvents",
+    "watchDirectory": "useFsEvents",
+    "fallbackPolling": "dynamicPriority"
+  }
+}
