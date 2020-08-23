@@ -1,0 +1,16 @@
+{
+  "gist": {
+    "filename": "",
+    "id": ""
+  },
+  "twitter": {
+    "user": {
+      "secret": "",
+      "accesstoken": ""
+    },
+    "consumer": {
+      "key": "",
+      "secret": ""
+    }
+  }
+}
