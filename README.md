@@ -29,24 +29,25 @@ So I took a project that I had in my firebase account and did the following:
 
 ```json
   {
-    lastExec: 0
+    "lastExec": 0
   }
 ```
 
-[More info](https://firebase.google.com/docs)
+This is required for the script knows what is the next sentece to post.
 
 ### Twitter
 
 You need a verified account on Twitter
 
 - Go to [developer dashboard](https://developer.twitter.com/en/dashboard);
-- On top menu, go to your username and click on **Apps** menu;
-- Click on **Create an app** button;
+- On top menu, go to your username and click in **Apps** menu;
+- Click in **Create an app** button;
 - Fill informations and submit;
 - On app management, go to **Keys and Tokens** menu;
 
-On **Consumer API keys** section is your app credentials.
-On **Access token & access token secret** section is your account credentials, you need to download **Access Token** and **Access Token Secret** values and save on secure place;
+**Consumer API keys** section is your app credentials.
+
+**Access token & access token secret** section is your account credentials, you need to download **Access Token** and **Access Token Secret** values and save on secure place;
 
 ### Gist
 
@@ -87,6 +88,7 @@ $ firebase functions:config:set twitter.consumer.secret="<twitter_consumer_api_s
 ```
 
 > **Gist ID** is on access URL of the Gist, example: `https://gist.github.com/<your_github_username>/<gist_id_here>`;
+>
 > `twitter.user.*` values are the credentials of the account where the tweets will be posted.
 
 - Finally, run deploy command: `firebase deploy --only functions`;
