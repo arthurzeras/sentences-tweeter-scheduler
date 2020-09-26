@@ -27,6 +27,11 @@ export const TweetScriptSentenceScheduler = functions
       const gistData = await gistResponse.json();
 
       const sentence = gistData.files[gist.filename].content.split('\n')[lastExecutionIndex];
+      
+      if (!sentence) {
+        functions.logger.info(`🤷‍♂️ No sentence found. Tweet will not be posted`);
+        return;
+      }
 
       const client = new Twitter({
         access_token_secret: twitter.user.secret,
